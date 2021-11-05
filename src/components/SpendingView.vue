@@ -9,6 +9,9 @@
       <button>month</button>
       <div class="inline-block pl-2"><i class="fas fa-caret-down"></i></div>
     </div>
+    <div class="h-5 relative m-auto" style="position: relative;">
+      <spending-chart></spending-chart>
+    </div>
 <!--    <div class="mt-6 text-sm">
       <ul class="flex list-none">
         <li class="border-b pr-8 pb-2 border-opacity-25">Budget</li>
@@ -21,8 +24,10 @@
 </template>
 
 <script>
+import SpendingChart from "./ui/SpendingChart";
 export default {
-  name: "SpendingView"
+  name: "SpendingView",
+  components: {SpendingChart}
 }
 </script>
 
