@@ -5,18 +5,18 @@
     </div>
     <div class="flex flex-col justify-between items-center h-5/6">
       <div>
-        <div class="text-gray-400 p-2"><i class="fas fa-arrows-alt"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-list-ul"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-envelope-open-text"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-credit-card"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-wallet"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-chart-line"></i></div>
-        <div class="text-gray-400 p-2"><i class="fas fa-folder"></i></div>
+        <div class="text-gray-500 p-2"><i class="fas fa-arrows-alt"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-list-ul"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-envelope-open-text"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-credit-card"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-wallet"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-chart-line"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-folder"></i></div>
       </div>
         <!--down -->
       <div>
-        <div class="text-gray-400 p-2"><i class="fas fa-sliders-h"></i></div>
-        <div class="text-gray-400 p-2 pt-4"><i class="fas fa-door-open"></i></div>
+        <div class="text-gray-300 p-2"><i class="fas fa-sliders-h"></i></div>
+        <div class="text-gray-300 p-2 pt-4"><i class="fas fa-door-open"></i></div>
       </div>
     </div>
   </div>

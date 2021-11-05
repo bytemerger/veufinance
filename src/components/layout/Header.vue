@@ -6,13 +6,13 @@
         <input type="text" name="search" placeholder="Search something..." class="inline-block px-2 outline-none align-middle text-xs text-gray-400">
       </div>
       <div>
-        <div class="inline-block rounded px-1 shadow-sm border-2 m-3">
+        <div class="inline-block rounded px-1 shadow-sm border m-3 text-gray-500">
           <i class="far fa-comment"></i>
         </div>
-        <div class="inline-block rounded px-1 shadow-sm border-2 m-3">
+        <div class="inline-block rounded px-1 shadow-sm border m-3 text-gray-500">
           <i class="far fa-bell"></i>
         </div>
-        <div class="inline-block rounded px-1 shadow-sm border-2 m-3">
+        <div class="inline-block rounded px-1 shadow-sm border m-3 text-gray-500">
           <i class="fas fa-bars"></i>
         </div>
       </div>
