@@ -3,10 +3,11 @@
     <div class="flex">
       <side-bar class="flex-grow-0"></side-bar>
       <div class="border-l  border-opacity-25"></div>
-      <main class="flex-grow ml-10">
+      <main class="flex-grow ml-14">
         <Header></Header>
-        <div class="flex mt-9 justify-between">
+        <div class="flex mt-9">
           <credit-view></credit-view>
+          <div class="border-l  border-opacity-25 flex-grow-0 ml-7 mr-8"></div>
           <spending-view></spending-view>
         </div>
       </main>
