@@ -1,7 +1,7 @@
 <template>
-  <div class="p-3">
-    <div class="flex justify-between items-center mb-4">
-      <div class="flex items-center ml-10">
+  <div class="pt-3">
+    <div class="flex justify-between items-center mb-2">
+      <div class="flex items-center">
         <i class="fa fa-search text-gray-300 text-xl"></i>
         <input type="text" name="search" placeholder="Search something..." class="inline-block px-2 outline-none align-middle text-xs text-gray-400">
       </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <hr class="ml-10 h-0.5 bg-gray-50 border-0"/>
+    <div class="border-b  border-opacity-30"/>
   </div>
 </template>
 
