@@ -10,12 +10,16 @@
         <li class="border-b pr-8 pb-2 border-opacity-25">Value</li>
       </ul>
     </div>
+    <credit-card class="mt-8"></credit-card>
+    <credit-card class="mt-4"></credit-card>
   </div>
 </template>
 
 <script>
+import CreditCard from "./ui/CreditCard";
 export default {
-  name: "CreditView"
+  name: "CreditView",
+  components: {CreditCard}
 }
 </script>
 
