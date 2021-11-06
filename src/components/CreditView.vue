@@ -11,10 +11,7 @@
       </ul>
     </div>
     <div class="card-holder masked overflow-x-auto h-120">
-      <credit-card :light="false" class="mt-8"></credit-card>
-      <credit-card :light="true" class="mt-4"></credit-card>
-      <credit-card :light="false" class="mt-8"></credit-card>
-      <credit-card :light="true" class="mt-4"></credit-card>
+      <credit-card v-for="n in 4" :light="n%2 === 0" :key="n" class="mt-8"></credit-card>
     </div>
   </div>
 </template>
@@ -45,7 +42,6 @@ export default {
 }
 .active{
   position: relative;
-
 }
 .active::before {
   content: '';
