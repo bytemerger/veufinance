@@ -9,8 +9,8 @@
       <button>month</button>
       <div class="inline-block pl-2"><i class="fas fa-caret-down"></i></div>
     </div>
-    <div class="h-5 relative m-auto" style="position: relative;">
-      <spending-chart></spending-chart>
+    <div class="h-44 m-auto">
+      <spending-chart class="h-44 bg-gray-400"></spending-chart>
     </div>
 <!--    <div class="mt-6 text-sm">
       <ul class="flex list-none">
