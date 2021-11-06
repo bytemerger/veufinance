@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col p-4 align-middle h-screen">
-    <div class="inline-block mb-14">
+    <div class="inline-block mb-10">
       <img src="../../assets/logoceed.png"  alt="ceed_cap logo"/>
     </div>
     <div class="flex flex-col justify-between items-center h-5/6">

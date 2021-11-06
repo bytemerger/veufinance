@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-3">
-    <div class="flex justify-between items-center mb-2">
+  <div class="pt-1">
+    <div class="flex justify-between items-center mb-1">
       <div class="flex items-center">
         <i class="fa fa-search text-gray-300 text-xl"></i>
         <input type="text" name="search" placeholder="Search something..." class="inline-block px-2 outline-none align-middle text-xs text-gray-400">

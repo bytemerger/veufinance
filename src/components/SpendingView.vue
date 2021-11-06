@@ -10,7 +10,7 @@
       <div class="inline-block pl-2"><i class="fas fa-caret-down"></i></div>
     </div>
     <div class="mt-6 w-full mb-8">
-     <img src="../assets/chart.png" class="w-full" alt="chart">
+     <img src="../assets/chart.png" class="w-full h-44" alt="chart">
     </div>
     <div>
       <div class="text-2xl mb-1.5 font-semibold text-gray-800">Invoices</div>

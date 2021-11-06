@@ -4,14 +4,18 @@
     <div class="text-xs text-gray-500 mt-2.5">You can find all the information about your credit card here</div>
     <div class="mt-8 text-sm">
       <ul class="flex list-none">
-        <li class="border-b pr-8 pb-2 border-opacity-25">Budget</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Spending</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Balance</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Value</li>
+        <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-25">Budget</li>
+        <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-25">Spending</li>
+        <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-25">Balance</li>
+        <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-25">Value</li>
       </ul>
     </div>
-    <credit-card class="mt-8"></credit-card>
-    <credit-card class="mt-4"></credit-card>
+    <div class="card-holder masked overflow-x-auto h-120">
+      <credit-card :light="false" class="mt-8"></credit-card>
+      <credit-card :light="true" class="mt-4"></credit-card>
+      <credit-card :light="false" class="mt-8"></credit-card>
+      <credit-card :light="true" class="mt-4"></credit-card>
+    </div>
   </div>
 </template>
 
@@ -24,5 +28,19 @@ export default {
 </script>
 
 <style scoped>
-
+@media only screen and (min-width: 900px) {
+  .masked{
+    /*
+      -webkit-mask-image: -webkit-gradient(linear,left 20%,left bottom,from(black),to(rgba(0,0,0,0)))
+    */
+    mask-image: linear-gradient(to bottom, black 90%, white);
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.h-120{
+  height: 26rem;
+}
 </style>
