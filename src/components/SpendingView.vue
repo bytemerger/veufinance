@@ -9,14 +9,81 @@
       <button>month</button>
       <div class="inline-block pl-2"><i class="fas fa-caret-down"></i></div>
     </div>
-<!--    <div class="mt-6 text-sm">
-      <ul class="flex list-none">
-        <li class="border-b pr-8 pb-2 border-opacity-25">Budget</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Spending</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Balance</li>
-        <li class="border-b pr-8 pb-2 border-opacity-25">Value</li>
-      </ul>
-    </div>-->
+    <div class="mt-6 w-full mb-8">
+     <img src="../assets/chart.png" class="w-full" alt="chart">
+    </div>
+    <div>
+      <div class="text-2xl mb-1.5 font-medium">Invoices</div>
+      <div class="flex justify-between mb-5">
+        <div class="text-xs text-gray-400">Cernbank.inc 280, 550 street 12/3 man, London</div>
+        <div class=" flex pr-1.5">
+          <div class="inline-block mr-1.5"><i class="fas fa-chevron-circle-left"></i></div>
+          <div class="inline-block"><i class="fas fa-chevron-circle-right"></i></div>
+        </div>
+      </div>
+      <div class="flex w-56 overflow-x-auto masked">
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Store</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Store</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Store</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Store</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Stores</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col rounded border border-opacity-30 p-3 lg:w-1/4 md:w-1/2 mr-10">
+          <div class="text-gray-400 text-xs mb-1.5">#43256723</div>
+          <div class="font-medium">App Store</div>
+          <div class="text-gray-400 very-small-text mb-1.5">12 Jun 2021, 11:00pm</div>
+          <div class="border-b border-opacity-30 mb-2.5"></div>
+          <div class="flex justify-between">
+            <div class="font-medium">$120,00</div>
+            <div><i class="fas fa-arrow-down"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -27,5 +94,22 @@ export default {
 </script>
 
 <style scoped>
-
+.very-small-text{
+  font-size: 0.5em;
+}
+.masked{
+/*
+  -webkit-mask-image: -webkit-gradient(linear,left 20%,left bottom,from(black),to(rgba(0,0,0,0)))
+*/
+  mask-image: linear-gradient(to right, black 80%, transparent);
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+@media only screen and (min-width: 900px) {
+  .masked{
+    width:30rem;
+  }
+}
 </style>

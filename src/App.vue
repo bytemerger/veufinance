@@ -2,7 +2,7 @@
   <div id="app" class="container mx-0">
     <div class="flex">
       <side-bar class="flex-grow-0"></side-bar>
-      <div class="border-l  border-opacity-25"></div>
+      <div class="border-l border-opacity-25"></div>
       <main class="flex-grow ml-14">
         <Header></Header>
         <div class="flex mt-9">
