@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-3xl">Credit Card</div>
+    <div class="text-2xl font-semibold text-gray-800">Credit Card</div>
     <div class="text-xs text-gray-500 mt-2.5">You can find all the information about your credit card here</div>
     <div class="mt-8 text-sm">
       <ul class="flex list-none">

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container mx-0">
+  <div id="app" class="container mx-0 font-dm-sans">
     <div class="flex">
       <side-bar class="flex-grow-0"></side-bar>
       <div class="border-l border-opacity-25"></div>
@@ -8,7 +8,7 @@
         <div class="flex mt-9">
           <credit-view></credit-view>
           <div class="border-l  border-opacity-25 flex-grow-0 ml-7 mr-8"></div>
-          <spending-view></spending-view>
+          <spending-view class="w-4/6"></spending-view>
         </div>
       </main>
     </div>
