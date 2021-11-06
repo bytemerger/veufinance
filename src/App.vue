@@ -4,7 +4,7 @@
       <side-bar class="flex-grow-0"></side-bar>
       <div class="border-l border-opacity-25"></div>
       <main class="flex-grow ml-14">
-        <Header></Header>
+        <TheHeader></TheHeader>
         <div class="flex mt-9">
           <credit-view></credit-view>
           <div class="border-l  border-opacity-25 flex-grow-0 ml-7 mr-8"></div>
@@ -18,7 +18,7 @@
 <script>
 
 import SideBar from "./components/layout/SideBar";
-import Header from "./components/layout/Header";
+import TheHeader from "./components/layout/TheHeader";
 import CreditView from "./components/CreditView";
 import SpendingView from "./components/SpendingView";
 export default {
@@ -26,7 +26,7 @@ export default {
   components: {
     SpendingView,
     CreditView,
-    Header,
+    TheHeader,
     SideBar
 
   }
