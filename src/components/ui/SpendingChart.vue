@@ -8,32 +8,33 @@ export default {
       chartData: {
         labels: ["May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec", "Jan"],
         datasets: [{
-          label: false,
-          borderWidth: 0.5,
-          borderRadius: 3,
+          label: 'Spending',
+          borderWidth: 0.2,
+          barThickness: 1,
+          borderRadius: 90,
           backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
           ],
           borderColor: [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)',
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
+            'rgb(203,231,240)',
+            'rgb(23,28,40)',
           ],
-          pointBorderColor: '#2554FF',
+          pointBorderColor: 'rgb(23,28,40)',
           data: [3000, 9880, 6000, 4500, 7000, 3500, 4000, 5000, 6500]
         }]
       },
@@ -41,7 +42,7 @@ export default {
         scales: {
           yAxes: [{
             ticks: {
-              stepSize: 4000,
+              stepSize: 2000,
               callback: function(value) {
                 let values = value/1000;
                 console.log(values)
@@ -61,11 +62,18 @@ export default {
           }]
         },
         legend: {
-          display: true
+          display: false
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem) {
+              console.log(tooltipItem)
+              return tooltipItem.yLabel;
+            }
+          }
         },
         responsive: true,
         maintainAspectRatio: false,
-        height: 300,
       }
   }),
   mounted () {
