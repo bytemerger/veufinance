@@ -32,8 +32,8 @@
         </ul>
       </div>
       <spending-view :class="[ view === 'spending' ? '' : 'hidden']"></spending-view>
-      <div class="masked" :class="[ view === 'spending' ? 'hidden' : '']">
-        <credit-card v-for="n in 4" :light="n%2 === 0" :key="n" :mobile="true" class="mt-8 rounded-2xl"></credit-card>
+      <div :class="[ view === 'spending' ? 'hidden' : '']">
+        <credit-card v-for="n in 4" :light="n%2 === 0" :key="n" class="mt-8 rounded-2xl"></credit-card>
       </div>
     </div>
   </div>
