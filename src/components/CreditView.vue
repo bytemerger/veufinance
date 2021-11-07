@@ -30,7 +30,7 @@ export default {
     /*
       -webkit-mask-image: -webkit-gradient(linear,left 20%,left bottom,from(black),to(rgba(0,0,0,0)))
     */
-    mask-image: linear-gradient(to bottom, black 90%, white);
+    mask-image: linear-gradient(to bottom, black 80%, white);
   }
 }
 ::-webkit-scrollbar {
@@ -38,7 +38,7 @@ export default {
   background: transparent;
 }
 .h-120{
-  height: 26rem;
+  height: 28rem;
 }
 .active{
   position: relative;
