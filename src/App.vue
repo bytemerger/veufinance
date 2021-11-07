@@ -18,7 +18,7 @@
       <div class="mt-8 text-sm" :class="[ view === 'spending' ? 'hidden' : '']">
         <ul class="flex list-none text-xl">
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 active">Budget</li>
-          <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500">Spending</li>
+          <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500" @click="changeView('spending')" >Spending</li>
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500">Balance</li>
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500">Value</li>
         </ul>
@@ -28,9 +28,10 @@
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 active">Month</li>
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500">Weekly</li>
           <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500">Daily</li>
+          <li class="border-b pr-5 lg:pr-8 pb-2 border-opacity-30 text-gray-500" @click="changeView('card')">Cards</li>
         </ul>
       </div>
-      <spending-view></spending-view>
+      <spending-view :class="[ view === 'spending' ? '' : 'hidden']"></spending-view>
       <div class="masked" :class="[ view === 'spending' ? 'hidden' : '']">
         <credit-card v-for="n in 4" :light="n%2 === 0" :key="n" :mobile="true" class="mt-8 rounded-2xl"></credit-card>
       </div>
@@ -59,7 +60,15 @@ export default {
   },
   data(){
     return{
-      view: 'spending'
+      view: 'card'
+    }
+  },
+  methods:{
+    /*
+      For easier readability
+     */
+    changeView(view){
+      this.view = view;
     }
   }
 }
