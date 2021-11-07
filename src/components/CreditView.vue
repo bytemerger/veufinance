@@ -40,16 +40,4 @@ export default {
 .h-120{
   height: 28rem;
 }
-.active{
-  position: relative;
-}
-.active::before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 75%;
-  left: 0;
-  border-top: 1px solid black;
-}
 </style>
