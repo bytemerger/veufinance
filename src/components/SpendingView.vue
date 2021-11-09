@@ -50,6 +50,10 @@ export default {
     width: 0;
     background: transparent;
   }
+  /*Remove scroll for firefox*/
+  .masked{
+    scrollbar-width: none;
+  }
 }
 @media only screen and (min-width: 900px) {
   .masked{

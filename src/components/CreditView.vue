@@ -37,6 +37,10 @@ export default {
   width: 0;
   background: transparent;
 }
+/*Remove scroll for firefox*/
+.masked{
+  scrollbar-width: none;
+}
 .h-120{
   height: 28rem;
 }
